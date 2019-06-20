@@ -11,12 +11,12 @@ class Entity:
         self.x_init = x_init
         self.y_init = y_init
 
-class Endocrin(Entity):
+class Endocrine(Entity):
 
     def __init__(self, min_estrogen=0, max_estrogen=100):
         super().__init__(self)
         self.min_estrogen = min_estrogen
         self.max_estrogen = max_estrogen
 
-test = Endocrin()
+test = Endocrine()
 print(test.x_init, test.y_init, test.min_estrogen, test.max_estrogen)
