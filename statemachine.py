@@ -43,6 +43,7 @@ class StateMachine:
             self.report()
         except KeyError:
             print("No such transition!")
+            print(self.report())
     
     # Returns the actions that are possible at current state
     def avail_actions(self):

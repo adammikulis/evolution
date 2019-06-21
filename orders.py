@@ -9,6 +9,7 @@ from statemachine import StateMachine
 
 class Orders(StateMachine):
     def __init__(self):
+        # States for ADB Orders
         self.order_system = {'New' : {'place order':'In-Progress', 'delete':'Deleted'},
                         'Canceled' : {},
                         'Deleted' : {},
